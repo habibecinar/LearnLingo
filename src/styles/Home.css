@@ -28,12 +28,11 @@
 }
 
 .highlight {
-  display: inline-block;
   background: #fbe9ba;
   font-style: italic;
+  font-weight: 400;
   border-radius: 8px;
-  padding: 0 4px;
-  position: relative;
+  padding: 7px 12px;
 }
 
 .hero-description {
@@ -85,21 +84,24 @@
 
 .stats-grid {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   gap: 100px;
-  max-width: 1200px;
+  max-width: 1312px;
   margin: 0 auto;
-  padding: 40px 64px;
+  padding: 40px 122px;
   background: white;
   border-radius: 30px;
+  border: 1.5px dashed #f4c550;
 }
 
 .stat-card {
   display: flex;
   gap: 16px;
   align-items: center;
-  border-right: 2px solid rgba(18, 20, 23, 0.1);
+  border-right: 2px solid rgba(18, 20, 23, 0.2);
   padding-right: 100px;
+  min-width: 0;
 }
 
 .stat-card:last-child {

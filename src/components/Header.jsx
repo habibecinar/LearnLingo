@@ -45,7 +45,7 @@ export default function Header() {
                     <span>{user.email}</span>
                   </div>
                   <button onClick={handleLogout} className="btn-logout">
-                    Çıkış
+                    Log out
                   </button>
                 </>
               ) : (
@@ -55,13 +55,13 @@ export default function Header() {
                     className="btn-login"
                   >
                     <FiUser />
-                    Giriş Yap
+                    Log in
                   </button>
                   <button
                     onClick={() => handleAuthClick("register")}
                     className="btn-register"
                   >
-                    Kayıt Ol
+                    Registration
                   </button>
                 </>
               )}

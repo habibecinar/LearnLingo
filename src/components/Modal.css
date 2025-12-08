@@ -9,7 +9,9 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overflow-y: auto;
   animation: fadeIn 0.3s ease;
+  padding: 20px 0;
 }
 
 @keyframes fadeIn {
@@ -27,8 +29,29 @@
   border-radius: 30px;
   max-width: 566px;
   width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
   animation: slideUp 0.3s ease;
+}
+
+/* Custom scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #f4c550;
+  border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #e5b640;
 }
 
 @keyframes slideUp {
@@ -210,10 +233,64 @@ textarea {
 @media (max-width: 768px) {
   .modal-content {
     padding: 40px 24px;
-    max-width: 90%;
+    max-width: 95%;
+    max-height: 85vh;
   }
 
   .modal-content h2 {
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+  .radio-group h4 {
+    font-size: 20px;
+  }
+
+  .modal-close {
+    top: 16px;
+    right: 16px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-backdrop {
+    padding: 10px 0;
+  }
+
+  .modal-content {
+    padding: 32px 20px;
+    width: 95%;
+    max-height: 80vh;
+  }
+
+  .modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .modal-subtitle {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .radio-group h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 14px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    padding: 14px;
+    font-size: 16px;
   }
 }

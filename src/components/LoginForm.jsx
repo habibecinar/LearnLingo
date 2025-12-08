@@ -7,12 +7,12 @@ import "../styles/AuthForms.css";
 const schema = yup.object({
   email: yup
     .string()
-    .email("Geçerli bir email girin")
-    .required("Email zorunludur"),
+    .email("Please enter a valid email")
+    .required("Email is required"),
   password: yup
     .string()
-    .min(6, "Şifre en az 6 karakter olmalıdır")
-    .required("Şifre zorunludur"),
+    .min(6, "Password must be at least 6 characters")
+    .required("Password is required"),
 });
 
 export default function LoginForm({ onClose, onSwitchToRegister }) {

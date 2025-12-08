@@ -6,10 +6,10 @@ import toast from "react-hot-toast";
 import "./Modal.css";
 
 const bookingSchema = yup.object().shape({
-  reason: yup.string().required("Bir seçenek seçmelisiniz"),
-  name: yup.string().required("İsim zorunludur"),
-  email: yup.string().email("Geçerli bir email giriniz").required("Email zorunludur"),
-  phone: yup.string().required("Telefon numarası zorunludur"),
+  reason: yup.string().required("Please select an option"),
+  name: yup.string().required("Name is required"),
+  email: yup.string().email("Please enter a valid email").required("Email is required"),
+  phone: yup.string().required("Phone number is required"),
 });
 
 export default function BookingModal({ isOpen, onClose, teacher }) {
@@ -29,7 +29,7 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
 
   const onSubmit = async (data) => {
     console.log("Booking data:", data);
-    toast.success("Deneme dersi başarıyla rezerve edildi!");
+    toast.success("Trial lesson booked successfully!");
     handleClose();
   };
 
@@ -59,22 +59,22 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
           <FiX />
         </button>
 
-        <h2>Deneme Dersi Rezervasyonu</h2>
+        <h2>Book trial lesson</h2>
         <p className="modal-subtitle">
-          Deneyimli öğretmenlerimiz size İngilizce öğrenme hedeflerinize ulaşmanızda yardımcı olacaktır.
+          Our experienced tutors will assess your current language level, discuss your learning goals, and tailor the lesson to your specific needs.
         </p>
 
         <div className="teacher-info">
           <img src={teacher.avatar_url} alt={teacher.name} />
           <div className="teacher-details">
-            <h4>Öğretmeniniz</h4>
+            <h4>Your teacher</h4>
             <p>{teacher.name} {teacher.surname}</p>
           </div>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="radio-group">
-            <h4>Deneme dersi rezervasyonunuzun nedeni nedir?</h4>
+            <h4>What is your main reason for learning English?</h4>
             
             <div className="radio-option">
               <input
@@ -83,7 +83,7 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
                 value="Career and business"
                 {...register("reason")}
               />
-              <label htmlFor="career">Kariyer ve iş</label>
+              <label htmlFor="career">Career and business</label>
             </div>
 
             <div className="radio-option">
@@ -93,7 +93,7 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
                 value="Lesson for kids"
                 {...register("reason")}
               />
-              <label htmlFor="kids">Çocuklar için ders</label>
+              <label htmlFor="kids">Lesson for kids</label>
             </div>
 
             <div className="radio-option">
@@ -103,7 +103,7 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
                 value="Living abroad"
                 {...register("reason")}
               />
-              <label htmlFor="abroad">Yurtdışında yaşamak</label>
+              <label htmlFor="abroad">Living abroad</label>
             </div>
 
             <div className="radio-option">
@@ -113,7 +113,7 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
                 value="Exams and coursework"
                 {...register("reason")}
               />
-              <label htmlFor="exams">Sınavlar ve kurs çalışmaları</label>
+              <label htmlFor="exams">Exams and coursework</label>
             </div>
 
             <div className="radio-option">
@@ -123,7 +123,7 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
                 value="Culture, travel or hobby"
                 {...register("reason")}
               />
-              <label htmlFor="culture">Kültür, seyahat veya hobi</label>
+              <label htmlFor="culture">Culture, travel or hobby</label>
             </div>
 
             {errors.reason && (
@@ -134,7 +134,7 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
           <div className="form-group">
             <input
               type="text"
-              placeholder="İsim"
+              placeholder="Full Name"
               {...register("name")}
               className={errors.name ? "error" : ""}
             />
@@ -158,7 +158,7 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
           <div className="form-group">
             <input
               type="tel"
-              placeholder="Telefon numarası"
+              placeholder="Phone number"
               {...register("phone")}
               className={errors.phone ? "error" : ""}
             />
@@ -168,7 +168,7 @@ export default function BookingModal({ isOpen, onClose, teacher }) {
           </div>
 
           <button type="submit" className="btn-primary">
-            Rezervasyon Yap
+            Book
           </button>
         </form>
       </div>

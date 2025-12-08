@@ -38,7 +38,7 @@ export function AuthProvider({ children }) {
         email,
         password
       );
-      toast.success("Kayıt başarılı!");
+      toast.success("Registration successful!");
       return userCredential;
     } catch (error) {
       toast.error(error.message);
@@ -53,10 +53,10 @@ export function AuthProvider({ children }) {
         email,
         password
       );
-      toast.success("Giriş başarılı!");
+      toast.success("Login successful!");
       return userCredential;
     } catch (error) {
-      toast.error("Giriş başarısız!");
+      toast.error("Login failed!");
       throw error;
     }
   };
@@ -64,7 +64,7 @@ export function AuthProvider({ children }) {
   const logout = async () => {
     try {
       await signOut(auth);
-      toast.success("Çıkış yapıldı!");
+      toast.success("Logged out successfully!");
     } catch (error) {
       toast.error(error.message);
       throw error;

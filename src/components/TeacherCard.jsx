@@ -14,7 +14,7 @@ export default function TeacherCard({ teacher }) {
 
   const handleFavoriteClick = () => {
     if (!user) {
-      toast.error("Favorilere eklemek için giriş yapmalısınız!");
+      toast.error("Please log in to add to favorites!");
       return;
     }
     toggleFavorite(teacher);
@@ -22,7 +22,7 @@ export default function TeacherCard({ teacher }) {
 
   const handleBookingClick = () => {
     if (!user) {
-      toast.error("Ders rezervasyonu için giriş yapmalısınız!");
+      toast.error("Please log in to book a lesson!");
       return;
     }
     setIsBookingModalOpen(true);
