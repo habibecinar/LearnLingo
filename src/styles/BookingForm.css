@@ -1,0 +1,117 @@
+.booking-form {
+  padding: 16px 0;
+}
+
+.teacher-info-small {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.teacher-avatar-small {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teacher-label-small {
+  font-size: 12px;
+  color: rgba(18, 20, 23, 0.5);
+  margin: 0;
+}
+
+.teacher-name-small {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #121417;
+}
+
+.booking-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #121417;
+}
+
+.radio-group {
+  margin-bottom: 24px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #121417;
+}
+
+.radio-label input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #f4c550;
+}
+
+.radio-label span {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #f4c550;
+}
+
+.form-group input.error {
+  border-color: #ff4757;
+}
+
+.error-message {
+  color: #ff4757;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 16px;
+  background: #f4c550;
+  color: #121417;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 24px;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background: #f0b841;
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

@@ -1,0 +1,167 @@
+{
+  "teacher1": {
+    "name": "Emily",
+    "surname": "Smith",
+    "languages": ["English", "French"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate", "B2 Upper-Intermediate"],
+    "rating": 4.8,
+    "reviews": [
+      {
+        "reviewer_name": "John Doe",
+        "reviewer_rating": 5.0,
+        "comment": "Emily is an excellent teacher! She explains everything clearly and makes learning fun. Highly recommended!"
+      },
+      {
+        "reviewer_name": "Maria Garcia",
+        "reviewer_rating": 4.5,
+        "comment": "Great experience with Emily. Very patient and professional."
+      }
+    ],
+    "price_per_hour": 30,
+    "lessons_done": 450,
+    "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
+    "lesson_info": "Online lessons with certified teacher",
+    "conditions": ["Speaks 2 languages", "Experienced teacher", "Interactive lessons"],
+    "experience": "I have been teaching English for over 10 years. I specialize in conversational English and business communication. My teaching approach is student-centered, focusing on practical language skills that you can use in real-life situations. I believe in creating a comfortable and encouraging learning environment where students feel confident to practice and make mistakes."
+  },
+  "teacher2": {
+    "name": "Michael",
+    "surname": "Johnson",
+    "languages": ["English", "Spanish"],
+    "levels": ["B1 Intermediate", "B2 Upper-Intermediate", "C1 Advanced", "C2 Proficient"],
+    "rating": 4.9,
+    "reviews": [
+      {
+        "reviewer_name": "Sophie Chen",
+        "reviewer_rating": 5.0,
+        "comment": "Michael is fantastic! His lessons are well-structured and engaging."
+      }
+    ],
+    "price_per_hour": 35,
+    "lessons_done": 520,
+    "avatar_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+    "lesson_info": "Specialized in business English",
+    "conditions": ["Business English expert", "TOEFL preparation", "Flexible schedule"],
+    "experience": "With 15 years of teaching experience, I specialize in helping professionals improve their business English skills. I have worked with executives from various industries and understand the importance of clear, effective communication in the workplace."
+  },
+  "teacher3": {
+    "name": "Sarah",
+    "surname": "Williams",
+    "languages": ["English"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate"],
+    "rating": 4.7,
+    "reviews": [
+      {
+        "reviewer_name": "Alex Brown",
+        "reviewer_rating": 4.8,
+        "comment": "Sarah is very patient and understanding. Perfect for beginners!"
+      }
+    ],
+    "price_per_hour": 25,
+    "lessons_done": 380,
+    "avatar_url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
+    "lesson_info": "Focus on conversational skills",
+    "conditions": ["Native speaker", "Interactive approach", "Homework support"],
+    "experience": "I'm passionate about helping students build confidence in speaking English. My lessons focus on real conversations and practical scenarios. I create a relaxed atmosphere where you can practice without fear of making mistakes."
+  },
+  "teacher4": {
+    "name": "David",
+    "surname": "Martinez",
+    "languages": ["Spanish", "English"],
+    "levels": ["A2 Elementary", "B1 Intermediate", "B2 Upper-Intermediate"],
+    "rating": 4.6,
+    "reviews": [
+      {
+        "reviewer_name": "Emma Wilson",
+        "reviewer_rating": 4.5,
+        "comment": "Very knowledgeable teacher. Great for improving Spanish skills."
+      }
+    ],
+    "price_per_hour": 28,
+    "lessons_done": 320,
+    "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+    "lesson_info": "Cultural immersion approach",
+    "conditions": ["Native Spanish speaker", "Cultural lessons", "Grammar expert"],
+    "experience": "I combine language learning with cultural insights to give you a comprehensive understanding of Spanish. My teaching method emphasizes practical communication while building a strong grammatical foundation."
+  },
+  "teacher5": {
+    "name": "Anna",
+    "surname": "Kowalski",
+    "languages": ["French", "English"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate", "B2 Upper-Intermediate"],
+    "rating": 4.9,
+    "reviews": [
+      {
+        "reviewer_name": "Thomas Lee",
+        "reviewer_rating": 5.0,
+        "comment": "Anna makes learning French enjoyable and easy to understand!"
+      }
+    ],
+    "price_per_hour": 32,
+    "lessons_done": 410,
+    "avatar_url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop",
+    "lesson_info": "French for all levels",
+    "conditions": ["DELF preparation", "Conversation practice", "Custom materials"],
+    "experience": "As a native French speaker with teaching certification, I help students of all levels achieve their French language goals. Whether you're preparing for exams or want to improve your conversation skills, I'll create a personalized learning plan for you."
+  },
+  "teacher6": {
+    "name": "Hans",
+    "surname": "Mueller",
+    "languages": ["German", "English"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate"],
+    "rating": 4.7,
+    "reviews": [
+      {
+        "reviewer_name": "Lisa Anderson",
+        "reviewer_rating": 4.7,
+        "comment": "Hans is a great teacher! Very organized and professional."
+      }
+    ],
+    "price_per_hour": 30,
+    "lessons_done": 290,
+    "avatar_url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop",
+    "lesson_info": "German language and culture",
+    "conditions": ["Native German speaker", "Business German", "Test preparation"],
+    "experience": "I specialize in teaching German to English speakers, with a focus on practical communication skills. My lessons incorporate German culture and customs to give you a well-rounded learning experience."
+  },
+  "teacher7": {
+    "name": "Lucia",
+    "surname": "Rossi",
+    "languages": ["Italian", "English"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate", "B2 Upper-Intermediate"],
+    "rating": 4.8,
+    "reviews": [
+      {
+        "reviewer_name": "Robert Taylor",
+        "reviewer_rating": 4.8,
+        "comment": "Lucia is wonderful! She makes Italian easy and fun to learn."
+      }
+    ],
+    "price_per_hour": 27,
+    "lessons_done": 350,
+    "avatar_url": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=200&h=200&fit=crop",
+    "lesson_info": "Italian for travelers and students",
+    "conditions": ["Native Italian speaker", "Travel Italian", "Cultural lessons"],
+    "experience": "I'm passionate about sharing the beauty of the Italian language and culture. My lessons are designed to be engaging and practical, whether you're learning for travel, work, or personal enrichment."
+  },
+  "teacher8": {
+    "name": "Wei",
+    "surname": "Zhang",
+    "languages": ["Mandarin Chinese", "English"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate"],
+    "rating": 4.9,
+    "reviews": [
+      {
+        "reviewer_name": "Jennifer Kim",
+        "reviewer_rating": 5.0,
+        "comment": "Wei is an excellent Mandarin teacher! Very patient and clear."
+      }
+    ],
+    "price_per_hour": 33,
+    "lessons_done": 440,
+    "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop",
+    "lesson_info": "Mandarin for beginners to intermediate",
+    "conditions": ["Native speaker", "HSK preparation", "Business Chinese"],
+    "experience": "I have been teaching Mandarin Chinese for over 8 years to students from various backgrounds. I focus on building a strong foundation in pronunciation, characters, and grammar while making learning enjoyable and relevant to your goals."
+  }
+}

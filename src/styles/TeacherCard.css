@@ -1,0 +1,268 @@
+.teacher-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 48px;
+  border: none;
+  box-shadow: none;
+}
+
+.teacher-avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.teacher-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fbe9ba;
+  padding: 12px;
+  box-sizing: content-box;
+}
+
+.avatar-status {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 12px;
+  height: 12px;
+  background: #38cd3e;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.teacher-content {
+  flex: 1;
+}
+
+.teacher-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.teacher-label {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #8a8a89;
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+.teacher-name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  color: #121417;
+}
+
+.teacher-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+  color: #121417;
+}
+
+.teacher-rating,
+.teacher-lessons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.star-icon,
+.book-icon {
+  color: #f4c550;
+  font-size: 16px;
+}
+
+.teacher-price {
+  color: rgba(18, 20, 23, 0.7);
+}
+
+.price-value {
+  color: #38ef7d;
+  font-weight: 600;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.heart-icon {
+  font-size: 20px;
+  color: #121417;
+  transition: all 0.2s;
+}
+
+.heart-icon.filled {
+  color: #f4c550;
+}
+
+.favorite-btn:hover .heart-icon {
+  transform: scale(1.1);
+}
+
+.teacher-details {
+  margin-bottom: 12px;
+}
+
+.detail-item {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.detail-label {
+  color: rgba(18, 20, 23, 0.5);
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.language-badge {
+  display: inline;
+  padding: 0;
+  background: transparent;
+  font-size: 16px;
+  margin-right: 0;
+  text-decoration: underline;
+  color: #121417;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #121417;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.read-more-btn:hover {
+  color: #f4c550;
+}
+
+.expanded-content {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(18, 20, 23, 0.1);
+}
+
+.experience {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(18, 20, 23, 0.8);
+  margin-bottom: 20px;
+}
+
+.reviews {
+  margin: 20px 0;
+}
+
+.review-item {
+  margin-bottom: 20px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.reviewer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f4c550;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #121417;
+}
+
+.reviewer-name {
+  font-weight: 500;
+  margin: 0;
+  font-size: 14px;
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.review-comment {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(18, 20, 23, 0.7);
+  margin: 0;
+}
+
+.levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.level-badge {
+  padding: 8px 12px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #121417;
+}
+
+.book-btn {
+  margin-top: 32px;
+  padding: 16px 48px;
+  background: #f4c550;
+  color: #121417;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.56;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.book-btn:hover {
+  background: #ffdc86;
+}
+
+@media (max-width: 768px) {
+  .teacher-card {
+    flex-direction: column;
+  }
+
+  .teacher-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .teacher-meta {
+    flex-wrap: wrap;
+  }
+}

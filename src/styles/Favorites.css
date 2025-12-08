@@ -1,0 +1,27 @@
+.favorites-page {
+  min-height: calc(100vh - 80px);
+  padding: 40px 0;
+  background: #f8f8f8;
+}
+
+.favorites-page h1 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 32px;
+  color: #121417;
+}
+
+.no-favorites {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-favorites p {
+  color: rgba(18, 20, 23, 0.7);
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.teachers-list {
+  margin-top: 32px;
+}

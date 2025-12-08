@@ -1,0 +1,219 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: white;
+  padding: 64px;
+  border-radius: 30px;
+  max-width: 566px;
+  width: 90%;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #121417;
+  transition: color 0.3s;
+}
+
+.modal-close:hover {
+  color: #f4c550;
+}
+
+.modal-content h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #121417;
+}
+
+.modal-subtitle {
+  font-size: 16px;
+  color: rgba(18, 20, 23, 0.8);
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #f4c550;
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+  border-color: #e74c3c;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  background-color: #f4c550;
+  color: #121417;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #e5b640;
+}
+
+.modal-switch {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(18, 20, 23, 0.8);
+}
+
+.modal-switch button {
+  background: none;
+  border: none;
+  color: #f4c550;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.modal-switch button:hover {
+  color: #e5b640;
+}
+
+/* Booking Modal Specific Styles */
+.teacher-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.teacher-info img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teacher-details h4 {
+  font-size: 12px;
+  color: rgba(18, 20, 23, 0.5);
+  margin-bottom: 4px;
+}
+
+.teacher-details p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #121417;
+}
+
+.radio-group {
+  margin-bottom: 20px;
+}
+
+.radio-group h4 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #121417;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.radio-option input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  accent-color: #f4c550;
+}
+
+.radio-option label {
+  cursor: pointer;
+  font-size: 16px;
+  color: #121417;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 40px 24px;
+    max-width: 90%;
+  }
+
+  .modal-content h2 {
+    font-size: 32px;
+  }
+}

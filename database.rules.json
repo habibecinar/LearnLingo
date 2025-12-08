@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "teachers": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}

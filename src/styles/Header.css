@@ -1,0 +1,144 @@
+.header {
+  background: #f8f8f8;
+  border-bottom: none;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #121417;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.logo-text {
+  color: #121417;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #121417;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  transition: color 0.2s;
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav a:hover {
+  color: #f4c550;
+}
+
+.nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-email {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #121417;
+  font-size: 14px;
+}
+
+.btn-login,
+.btn-register,
+.btn-logout {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+}
+
+.btn-login {
+  background: transparent;
+  color: #121417;
+  border: 1px solid rgba(18, 20, 23, 0.2);
+}
+
+.btn-login:hover {
+  border-color: #f4c550;
+}
+
+.btn-register {
+  background: #f4c550;
+  color: #121417;
+}
+
+.btn-register:hover {
+  background: #ffdc86;
+}
+
+.btn-logout {
+  background: #ff4757;
+  color: #fff;
+}
+
+.btn-logout:hover {
+  background: #ee5a6f;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .auth-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
-// Firebase config'in
+// Firebase yapılandırması
 const firebaseConfig = {
   apiKey: "AIzaSyAByeE4iKwgSTw1oTww6_bZV6hM06CNy3Q",
   authDomain: "learnlingo-47403.firebaseapp.com",
@@ -14,10 +14,10 @@ const firebaseConfig = {
   measurementId: "G-GRLDM39VLJ"
 };
 
-// Firebase'i başlat
+// Firebase uygulamasını başlat
 const app = initializeApp(firebaseConfig);
 
-// Servisleri başlat
+// Authentication ve Database servislerini dışa aktar
 export const auth = getAuth(app);
 export const db = getDatabase(app);
 

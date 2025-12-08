@@ -1,0 +1,147 @@
+{
+  "teacher1": {
+    "name": "Emma",
+    "surname": "Johnson",
+    "languages": ["English"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate", "B2 Upper-Intermediate"],
+    "rating": 4.9,
+    "reviews": [
+      {
+        "reviewer_name": "John Smith",
+        "reviewer_rating": 5,
+        "comment": "Emma is an amazing teacher! Very patient and explains things clearly."
+      },
+      {
+        "reviewer_name": "Maria Garcia",
+        "reviewer_rating": 5,
+        "comment": "Best English teacher I've ever had. Highly recommended!"
+      }
+    ],
+    "price_per_hour": 30,
+    "lessons_done": 245,
+    "avatar_url": "https://i.pravatar.cc/150?img=1",
+    "lesson_info": "Certified English teacher with 5 years of experience",
+    "conditions": ["#1 lesson free", "Teaches students of all ages", "Flexible schedule"],
+    "experience": "I have been teaching English for 5 years and love helping students achieve their language goals. My teaching style is interactive and student-centered."
+  },
+  "teacher2": {
+    "name": "Michael",
+    "surname": "Chen",
+    "languages": ["English", "Mandarin Chinese"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate", "B2 Upper-Intermediate", "C1 Advanced"],
+    "rating": 4.8,
+    "reviews": [
+      {
+        "reviewer_name": "Sarah Lee",
+        "reviewer_rating": 5,
+        "comment": "Michael is fantastic! His lessons are always engaging and fun."
+      }
+    ],
+    "price_per_hour": 35,
+    "lessons_done": 312,
+    "avatar_url": "https://i.pravatar.cc/150?img=12",
+    "lesson_info": "Bilingual teacher specializing in English and Chinese",
+    "conditions": ["Professional materials provided", "Homework included", "Progress tracking"],
+    "experience": "Native speaker with 7 years of teaching experience. I specialize in conversational English and business English for professionals."
+  },
+  "teacher3": {
+    "name": "Sophie",
+    "surname": "Martin",
+    "languages": ["French", "English"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate"],
+    "rating": 4.7,
+    "reviews": [
+      {
+        "reviewer_name": "Tom Wilson",
+        "reviewer_rating": 4,
+        "comment": "Good teacher, very knowledgeable about French culture."
+      },
+      {
+        "reviewer_name": "Anna Brown",
+        "reviewer_rating": 5,
+        "comment": "Sophie makes learning French enjoyable and easy!"
+      }
+    ],
+    "price_per_hour": 28,
+    "lessons_done": 189,
+    "avatar_url": "https://i.pravatar.cc/150?img=5",
+    "lesson_info": "Native French speaker, experienced in teaching beginners",
+    "conditions": ["Conversation practice", "Cultural insights", "Interactive lessons"],
+    "experience": "French native speaker with a passion for teaching. I focus on practical conversation skills and cultural understanding."
+  },
+  "teacher4": {
+    "name": "Carlos",
+    "surname": "Rodriguez",
+    "languages": ["Spanish", "English"],
+    "levels": ["A2 Elementary", "B1 Intermediate", "B2 Upper-Intermediate", "C1 Advanced"],
+    "rating": 5.0,
+    "reviews": [
+      {
+        "reviewer_name": "Jennifer Adams",
+        "reviewer_rating": 5,
+        "comment": "Carlos is the best! I've learned so much in just a few months."
+      },
+      {
+        "reviewer_name": "David Kim",
+        "reviewer_rating": 5,
+        "comment": "Excellent teacher with great teaching methods."
+      },
+      {
+        "reviewer_name": "Lisa Chen",
+        "reviewer_rating": 5,
+        "comment": "Highly professional and always prepared."
+      }
+    ],
+    "price_per_hour": 32,
+    "lessons_done": 428,
+    "avatar_url": "https://i.pravatar.cc/150?img=15",
+    "lesson_info": "Professional Spanish teacher with university degree",
+    "conditions": ["Customized lesson plans", "Exam preparation available", "Business Spanish"],
+    "experience": "I have been teaching Spanish for over 10 years to students of all levels. I specialize in DELE exam preparation and business Spanish."
+  },
+  "teacher5": {
+    "name": "Anna",
+    "surname": "Schmidt",
+    "languages": ["German", "English"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate", "B2 Upper-Intermediate"],
+    "rating": 4.9,
+    "reviews": [
+      {
+        "reviewer_name": "Robert Johnson",
+        "reviewer_rating": 5,
+        "comment": "Anna is patient and thorough. Great for beginners!"
+      }
+    ],
+    "price_per_hour": 33,
+    "lessons_done": 267,
+    "avatar_url": "https://i.pravatar.cc/150?img=9",
+    "lesson_info": "Native German speaker, specializing in grammar and pronunciation",
+    "conditions": ["Structured curriculum", "Regular assessments", "Speaking practice"],
+    "experience": "Native German teacher with 6 years of experience. I focus on building a strong foundation in grammar while maintaining conversational fluency."
+  },
+  "teacher6": {
+    "name": "Yuki",
+    "surname": "Tanaka",
+    "languages": ["Japanese", "English"],
+    "levels": ["A1 Beginner", "A2 Elementary", "B1 Intermediate"],
+    "rating": 4.8,
+    "reviews": [
+      {
+        "reviewer_name": "Emily White",
+        "reviewer_rating": 5,
+        "comment": "Yuki makes learning Japanese fun and accessible!"
+      },
+      {
+        "reviewer_name": "Mark Davis",
+        "reviewer_rating": 4,
+        "comment": "Very good teacher, explains complex concepts well."
+      }
+    ],
+    "price_per_hour": 29,
+    "lessons_done": 156,
+    "avatar_url": "https://i.pravatar.cc/150?img=20",
+    "lesson_info": "Japanese native speaker, experienced in teaching beginners",
+    "conditions": ["Hiragana/Katakana included", "Cultural lessons", "Anime and manga references"],
+    "experience": "I'm a native Japanese speaker who loves sharing my language and culture. I make lessons fun by incorporating Japanese pop culture and real-life situations."
+  }
+}
