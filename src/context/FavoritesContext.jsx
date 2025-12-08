@@ -17,13 +17,17 @@ export function FavoritesProvider({ children }) {
 
   // User değiştiğinde favorileri localStorage'dan yükle
   useEffect(() => {
-    if (user) {
-      const storedFavorites = localStorage.getItem(`favorites_${user.uid}`);
-      const loadedFavorites = storedFavorites ? JSON.parse(storedFavorites) : [];
-      setFavorites(loadedFavorites);
-    } else {
-      setFavorites([]);
-    }
+    const loadFavorites = () => {
+      if (user) {
+        const storedFavorites = localStorage.getItem(`favorites_${user.uid}`);
+        const loadedFavorites = storedFavorites ? JSON.parse(storedFavorites) : [];
+        setFavorites(loadedFavorites);
+      } else {
+        setFavorites([]);
+      }
+    };
+    
+    loadFavorites();
   }, [user]);
 
   // Favorileri localStorage'a kaydet
